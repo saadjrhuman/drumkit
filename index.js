@@ -22,4 +22,14 @@ function adSlc() {
     audio = new Audio("sounds/kick-bass.mp3");
   }
   audio.play();
+  buttonAnimation(a);
+  buttonAnimation(b);
+}
+
+function buttonAnimation(ck) {
+  var f = document.querySelector("." + ck);
+  f.classList.add("pressed");
+  setTimeout(function () {
+    f.classList.remove("pressed");
+  }, 100);
 }
