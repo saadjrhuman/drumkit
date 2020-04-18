@@ -22,8 +22,11 @@ function adSlc() {
     audio = new Audio("sounds/kick-bass.mp3");
   }
   audio.play();
+  if(b===undefined){
   buttonAnimation(a);
+  }else{
   buttonAnimation(b);
+  }
 }
 
 function buttonAnimation(ck) {
